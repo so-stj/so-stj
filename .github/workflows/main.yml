@@ -1,2 +1,22 @@
 name: Main
 on:
+  
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+  
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Language metrics
+        uses: lowlighters/github-metrics@latest
+        with:
+          filename: metrics.plugin.language.svc
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
