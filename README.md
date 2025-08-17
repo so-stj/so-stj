@@ -1,2 +1,2 @@
 ## Hi there 👋
-- I'm half Thai and Japanese Junior DevOps Engineer
+- I'm half of Thai and Japanese Junior DevOps Engineer
