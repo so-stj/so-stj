@@ -13,8 +13,8 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
-      - name: Language metrics
-        uses: lowlighters/metrics@latest
+      - name: metrics embed
+        uses: lowlighter/metrics@v3.34
         with:
           filename: metrics.plugin.language.svc
           token: ${{ secrets.METRICS_TOKEN }}
