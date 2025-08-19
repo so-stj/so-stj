@@ -8,11 +8,12 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    enviornment:
     steps:
-      - name: metrics embed
-        uses: lowlighter/metrics@v3.34
+      - name: product metrics
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@latest
         with:
-          filename: metrics.plugin.language.svc
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_languages: yes
