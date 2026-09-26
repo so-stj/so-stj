@@ -1,5 +1,5 @@
 ## Hi there 👋
-- I'm a Junior DevOps Engineer who is passionate about open-source projects and cloud technology.
+- I'm a DevOps Engineer who is passionate about open-source projects and cloud technology.
 
 ## Profile
 
